@@ -5,6 +5,7 @@ import Portfolio from '../../components/Portfolio'
 import AboutUs from '../../components/AboutUs'
 import Client from '../../components/Client'
 import Events from '../../components/Events'
+import FreeTrial from '../../components/FreeTrial'
 import ContactUs from '../../components/ContactUs'
 import Footer from '../../components/Footer'
 import Testimonials from '../../components/Testimonials'
@@ -21,6 +22,7 @@ function index({}: Props) {
         <Client/>
         <AboutUs/>
         <Events/>
+        <FreeTrial/>
         <Testimonials/>
         <ContactUs/>
         <Footer/>

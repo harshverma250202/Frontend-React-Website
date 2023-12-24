@@ -1,11 +1,37 @@
-import React from 'react'
+import React from "react";
+import { Container, Box } from "@mui/material";
 
-type Props = {}
+type Props = {};
 
 const ContactUs = (props: Props) => {
   return (
-    <div>ContactUs</div>
-  )
-}
+    <>
+      <Container
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: "0",
+          margin: "5vh 0",
+          flexDirection: "column",
+          "@media (min-width: 600px)": {
+            padding: "0 10%",
+          },
+        }}
+      >
+        <Box
+          sx={{
+            position: "relative",
+            height: "20vh",
+            width: "100%",
+            borderRadius: "30px",
+            background:
+              "linear-gradient(90deg, #42D7F8 0%, #4282FE 52.98%, #262DFB 100%)",
+          }}
+        ></Box>
+      </Container>
+    </>
+  );
+};
 
-export default ContactUs
+export default ContactUs;
