@@ -7,35 +7,27 @@ type Props = {};
 const Events = (props: Props) => {
   return (
     <>
-      {/* <Container
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          margin: "0", // Default margin for mobile
-
-          "@media (min-width: 600px)": {
-            margin: "0 10%", // Margin for desktop and larger screens
-          },
-        }}
-      >
-        hemlo
-      </Container> */}
-
     < Box sx={{
         display: "flex",
         position: "relative",
     }}>
         <img src={EventImage} alt="Events" style={{width: "100%"}}/>
-        <Button sx={{
+            <Button
+          variant="contained"
+          sx={{
             position:'absolute',
             left: '50%',
             top: '50%',
             transform: 'translate(-50%, -50%)',
-    
-    
-    
-    }}  color='inherit'>View All</Button>
+            borderRadius: "30px",
+            background:
+              "linear-gradient(90deg, #42D7F8 0%, #4282FE 65.1%, #3A40FB 100%)",
+            width: "fit-content",
+            padding: "1.5vh 2vw",
+          }}
+        >
+          Watch Showrell
+        </Button>
 
     </Box>
 

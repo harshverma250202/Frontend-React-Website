@@ -48,6 +48,7 @@ const ContactUs = (props: Props) => {
               background: "white",
               width: "fit-content",
               marginTop: "5vh",
+              boxShadow:"none",
             }}
           >
             <Typography

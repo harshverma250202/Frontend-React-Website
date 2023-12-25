@@ -32,15 +32,19 @@ const AboutUs = (props: Props) => {
             width: "100%",
           }}
         >
-          <Typography variant="h3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptatum.
+          <Typography variant="h3" sx={{"@media(max-width: 600px)":{
+            fontSize:"2rem"
+          }}}>
+            We offer worthwhile experiences that help you go <span style={{color:'#4282FE'}}>above & beyond </span>and
+            guide your business to drive impact.
           </Typography>
         </Box>
-        <Box sx={{marginTop:"5vh",display:'flex',flexDirection:'column'}}>
-            <Card/>
-            <Card/>
-            <Card/>
+        <Box
+          sx={{ width:'100%', marginTop: "5vh", display: "flex", flexDirection: "column" }}
+        >
+          <Card buttonName="UI/UX Design"/>
+          <Card buttonName="Website Design"/>
+          <Card buttonName="Development"/>
         </Box>
       </Box>
     </>
