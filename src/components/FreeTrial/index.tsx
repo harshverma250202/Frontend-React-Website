@@ -26,7 +26,7 @@ const FreeTrial = (props: Props) => {
           height: "100vh",
           // height:"fit-content",
           "@media (max-width: 600px)": {
-            height: "fit-content",
+            height: "50vh",
           },
           width: "100%",
         }}

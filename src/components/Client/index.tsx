@@ -15,21 +15,22 @@ const StyledButton = styled(Button)({
   padding: "1.5vh 2vw",
 });
 
+const StyledContainer = styled(Container)({
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  padding: "0",
+  margin: "5vh 0",
+  flexDirection: "column",
+  "@media (min-width: 600px)": {
+    padding: "0 10%",
+  },
+});
+
 const Client = (props: Props) => {
   return (
     <>
-      <Container
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          padding: "0",
-          margin: "5vh 0",
-          flexDirection: "column",
-          "@media (min-width: 600px)": {
-            padding: "0 10%",
-          },
-        }}
+      <StyledContainer
         maxWidth={false}
       >
         <Box>
@@ -73,7 +74,7 @@ const Client = (props: Props) => {
         <StyledButton variant="contained" endIcon={<ArrowRightAlt />}>
           View All
         </StyledButton>
-      </Container>
+      </StyledContainer>
     </>
   );
 };

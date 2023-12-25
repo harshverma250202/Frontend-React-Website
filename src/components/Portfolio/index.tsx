@@ -28,14 +28,22 @@ const Portfolio = (props: Props) => {
         }}
         maxWidth={false}
       >
-        <Box sx={{ position: "absolute", left: "0",top:"0" }}>
+        <Box sx={{ position: "absolute", left: "0", top: "0" }}>
           <Typography variant="h5">FlagShip Projects</Typography>
         </Box>
 
         <Grid container spacing={1} sx={{ width: "100%", marginTop: "5vh" }}>
           <Grid item xs={12} sm={6}>
-            <Card image={Pic1} mainText="Night googles by Mindchatter" subText="Website design, Art direction, Development" />
-            <Card image={Pic2} mainText="Night googles by Mindchatter" subText="Website design, Art direction, Development" />
+            <Card
+              image={Pic1}
+              mainText="Night googles by Mindchatter"
+              subText="Website design, Art direction, Development"
+            />
+            <Card
+              image={Pic2}
+              mainText="Night googles by Mindchatter"
+              subText="Website design, Art direction, Development"
+            />
             <Button
               variant="contained"
               sx={{
@@ -46,20 +54,59 @@ const Portfolio = (props: Props) => {
                   "linear-gradient(90deg, #42D7F8 0%, #4282FE 65.1%, #3A40FB 100%)",
                 width: "fit-content",
                 padding: "1vh 2vw",
-                
-              }
-            
-            }
-            endIcon={<ArrowRightAlt />}
-
+                "@media(max-width:600px)": {
+                  display: "none",
+                },
+              }}
+              endIcon={<ArrowRightAlt />}
             >
               View All
             </Button>
           </Grid>
-          <Grid item xs={12} sm={6} sx={{ marginTop: "5vh" }}>
-            <Card image={Pic3} mainText="Night googles by Mindchatter" subText="Website design, Art direction, Development" />
-            <Card image={Pic4} mainText="Night googles by Mindchatter" subText="Website design, Art direction, Development" />
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            sx={{
+              marginTop: "5vh",
+              "@media(max-width:600px)": {
+                marginTop: "0vh",
+              },
+            }}
+          >
+            <Card
+              image={Pic3}
+              mainText="Night googles by Mindchatter"
+              subText="Website design, Art direction, Development"
+            />
+            <Card
+              image={Pic4}
+              mainText="Night googles by Mindchatter"
+              subText="Website design, Art direction, Development"
+            />
+             <Button
+              variant="contained"
+              sx={{
+                marginTop: "5vh",
+                transform: "translateY(-50%)",
+                borderRadius: "30px",
+                background:
+                  "linear-gradient(90deg, #42D7F8 0%, #4282FE 65.1%, #3A40FB 100%)",
+                width: "fit-content",
+                padding: "1vh 2vw",
+                "@media(max-width:600px)": {
+                  display: "block",
+                },
+
+                display: "none",
+              
+              }}
+              endIcon={<ArrowRightAlt />}
+            >
+              View All
+            </Button>
           </Grid>
+
         </Grid>
       </Container>
     </>
