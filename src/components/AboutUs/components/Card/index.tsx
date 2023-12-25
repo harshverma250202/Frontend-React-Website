@@ -51,15 +51,15 @@ const Card = (props: Props) => {
               <Typography variant="h6" >
               We provide end to end research services while discovering game-changing improvement opportunities.
               </Typography>
-              <Box sx={{marginTop:"2vh",display:"flex"}}>
+              <Box sx={{marginTop:"2vh",display:"flex",flexFlow:"wrap"}}>
                 <StyledButton>
-                  Mobile App Design
+                  Mobile&nbsp;App&nbsp;Design
                 </StyledButton>
                 <StyledButton>
-                  Web App Design
+                  Web&nbsp;App&nbsp;Design
                 </StyledButton>
                 <StyledButton>
-                  Design System
+                  Design&nbsp;System
                 </StyledButton>
               </Box>
 
