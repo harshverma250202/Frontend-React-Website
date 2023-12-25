@@ -1,4 +1,6 @@
 import React from "react";
+import { Facebook, LinkedIn, Twitter, YouTube } from "@mui/icons-material";
+
 import {
 
     Toolbar,
@@ -22,7 +24,7 @@ type Props = {
 const index = (props: Props) => {
   return (
     <>
-      <Drawer anchor="right" open={props.open} onClose={() => props.setOpen(false)}>
+      <Drawer anchor="right" open={props.open}  onClose={() => props.setOpen(false)}>
         <Toolbar sx={{ flexDirection: "row-reverse" }}>
           <IconButton
             edge="start"
@@ -30,7 +32,7 @@ const index = (props: Props) => {
             aria-label="close"
             onClick={() => props.setOpen(false)}
           >
-            {/* <img src={ToCloseHamburger} alt="hamburger" /> */}
+            <Close />
           </IconButton>
         </Toolbar>
 
@@ -44,35 +46,21 @@ const index = (props: Props) => {
               <ListItemText primary={item.name} />
             </ListItemButton>
           ))}
-          <ListItemButton
-            alignItems="center"
-            key="ABOUT US"
-            onClick={() => {
-              props.setOpen(false);
-              // dispatch(setElementRef("aboutUsId", "homepage"));
-              // dispatch(scrollElementIntoView());
-            }}
-          >
-            <ListItemText sx={{ color: "white" }} primary="ABOUT US" />
-          </ListItemButton>
-          <ListItemButton
-            alignItems="center"
-            key="PERFORM"
-            sx={{ position: "relative", marginTop: "5vh" }}
-            onClick={() => {
-              props.setOpen(false);
-              // dispatch(setElementRef("upcomingEventId", "homepage"));
-              // dispatch(scrollElementIntoView());
-            }}
-          >
-            <ListItemText sx={{ color: "white" }} primary="PERFORM" />
-            {/* <img
-                src={Polygon}
-                alt="polygon"
-                className={classes.performImage}
-              /> */}
-          </ListItemButton>
         </List>
+        <div>
+              <IconButton color="inherit">
+                <Facebook />
+              </IconButton>
+              <IconButton color="inherit">
+                <LinkedIn />
+              </IconButton>
+              <IconButton color="inherit">
+                <Twitter />
+              </IconButton>
+              <IconButton color="inherit">
+                <YouTube />
+              </IconButton>
+            </div>
       </Drawer>
     </>
   );

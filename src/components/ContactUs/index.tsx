@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Box } from "@mui/material";
+import { Container, Box, Typography, Button } from "@mui/material";
 
 type Props = {};
 
@@ -11,12 +11,15 @@ const ContactUs = (props: Props) => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          padding: "0",
+          padding: "0 5%",
           margin: "5vh 0",
-          width: "100%",
+          width: "fit-content",
+
           flexDirection: "column",
           "@media (min-width: 600px)": {
             padding: "0 10%",
+          width: "100%",
+
           },
         }}
         maxWidth={false}
@@ -29,8 +32,37 @@ const ContactUs = (props: Props) => {
             borderRadius: "30px",
             background:
               "linear-gradient(90deg, #42D7F8 0%, #4282FE 52.98%, #262DFB 100%)",
+            padding: "5vh",
+            display: "flex",
+            flexDirection: "column",
+            flexBasis: "content",
           }}
-        ></Box>
+        >
+          <Typography variant="h5">WORK WITH US</Typography>
+          <Typography variant="h3">We'd Love to get to know you.</Typography>
+
+          <Button
+            variant="contained"
+            sx={{
+              borderRadius: "30px",
+              background: "white",
+              width: "fit-content",
+              marginTop: "5vh",
+            }}
+          >
+            <Typography
+              variant="h6"
+              sx={{
+                // background:
+                //   "linear-gradient(90deg, #42D7F8 0%, #4282FE 65.1%, #3A40FB 100%)",
+                // backgroundClip: "text",
+                color: '#42D7F8',
+              }}
+            >
+              Get in Touch
+            </Typography>
+          </Button>
+        </Box>
       </Container>
     </>
   );

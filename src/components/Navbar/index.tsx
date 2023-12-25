@@ -25,28 +25,42 @@ function MobileNavbar() {
 
   const linkObj = [
     {
-      name: "HOME",
+      name: "Team",
       onClick: () => {
         setOpen(false);
-        // dispatch(setElementRef("homeId", "homepage"));
-        // dispatch(scrollElementIntoView());
       },
+      
     },
     {
-      name: "SPACES",
+      name: "Our Services",
       onClick: () => {
         setOpen(false);
-        // dispatch(setElementRef("exploreSpacesId", "homepage"));
-        // dispatch(scrollElementIntoView());
       },
-    },
-    {
-      name: "UPCOMING",
+      
+    },    {
+      name: "Work",
       onClick: () => {
         setOpen(false);
-        // dispatch(setElementRef("upcomingEventId", "homepage"));
-        // dispatch(scrollElementIntoView());
       },
+      
+    },    {
+      name: "RFDD",
+      onClick: () => {
+        setOpen(false);
+      },
+      
+    },    {
+      name: "Blogs",
+      onClick: () => {
+        setOpen(false);
+      },
+      
+    },    {
+      name: "Contact",
+      onClick: () => {
+        setOpen(false);
+      },
+      
     },
 
   ];
@@ -62,9 +76,9 @@ function MobileNavbar() {
             //   onClick={() => {
             //     dispatch(navigateTo("/"));
             //   }}
+            color="inherit"
             >
                 LOGO
-              {/* <img src={Logo} alt="hamburger" /> */}
             </IconButton>
             <IconButton
               edge="end"

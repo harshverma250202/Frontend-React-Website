@@ -1,0 +1,11 @@
+.scrollDown{
+    position: absolute;
+    bottom: 4vh;
+    right: 5vw;
+  }
+
+  @media (max-width: 600px) {
+    .scrollDown{
+        display: none;
+    }
+  }
