@@ -24,6 +24,10 @@ const FreeTrial = (props: Props) => {
           alignItems: "center",
           position: "relative",
           height: "100vh",
+          // height:"fit-content",
+          "@media (max-width: 600px)": {
+            height: "fit-content",
+          },
           width: "100%",
         }}
       >

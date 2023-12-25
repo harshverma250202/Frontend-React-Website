@@ -3,14 +3,14 @@ import { Box, Container, Typography, Grid, Button } from "@mui/material";
 import { ArrowRightAlt } from "@mui/icons-material";
 import { styled } from "@mui/material/styles";
 import Card from "./Components/Cards";
+import paperBoatIcon from "../../assets/images/paperBoatIcon.png";
 type Props = {};
 
 const StyledButton = styled(Button)({
   marginTop: "5vh",
   transform: "translateY(-50%)",
   borderRadius: "30px",
-  background:
-    "linear-gradient(90deg, #42D7F8 0%, #4282FE 65.1%, #3A40FB 100%)",
+  background: "linear-gradient(90deg, #42D7F8 0%, #4282FE 65.1%, #3A40FB 100%)",
   width: "fit-content",
   padding: "1.5vh 2vw",
 });
@@ -45,23 +45,32 @@ const Client = (props: Props) => {
         </Box>
 
         <Grid container sx={{ marginTop: "5vh" }}>
-          <Grid item xs={12} sm={6} lg={3}>
-            <Card />
+          <Grid item xs={6} sm={6} lg={3}>
+            <Card
+              image={paperBoatIcon}
+              mainText="Levelling up the end-user learning experience"
+            />
           </Grid>
-          <Grid item xs={12} sm={6} lg={3}>
-            <Card />
+          <Grid item xs={6} sm={6} lg={3}>
+            <Card
+              image={paperBoatIcon}
+              mainText="Levelling up the end-user learning experience"
+            />
           </Grid>
-          <Grid item xs={12} sm={6} lg={3}>
-            <Card />
+          <Grid item xs={6} sm={6} lg={3}>
+            <Card
+              image={paperBoatIcon}
+              mainText="Levelling up the end-user learning experience"
+            />
           </Grid>
-          <Grid item xs={12} sm={6} lg={3}>
-            <Card />
+          <Grid item xs={6} sm={6} lg={3}>
+            <Card
+              image={paperBoatIcon}
+              mainText="Levelling up the end-user learning experience"
+            />
           </Grid>
         </Grid>
-        <StyledButton
-          variant="contained"
-          endIcon={<ArrowRightAlt />}
-        >
+        <StyledButton variant="contained" endIcon={<ArrowRightAlt />}>
           View All
         </StyledButton>
       </Container>

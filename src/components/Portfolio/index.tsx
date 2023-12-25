@@ -2,6 +2,10 @@ import React from "react";
 import { Container, Typography, Box, Grid, Button } from "@mui/material";
 import { ArrowRightAlt } from "@mui/icons-material";
 import Card from "./components/Card";
+import Pic1 from "../../assets/images/pic1.png";
+import Pic2 from "../../assets/images/pic2.png";
+import Pic3 from "../../assets/images/pic3.png";
+import Pic4 from "../../assets/images/pic4.png";
 
 type Props = {};
 
@@ -13,23 +17,25 @@ const Portfolio = (props: Props) => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          padding: "0",
           margin: "5vh 0",
+          width: "100%",
           flexDirection: "column",
           "@media (min-width: 600px)": {
-            padding: "0 10%",
+            margin: "5vh 10%",
+            width: "80%",
           },
+          position: "relative",
         }}
         maxWidth={false}
       >
-        <Box sx={{ postion: "relative", left: "0" }}>
+        <Box sx={{ position: "absolute", left: "0",top:"0" }}>
           <Typography variant="h5">FlagShip Projects</Typography>
         </Box>
 
         <Grid container spacing={1} sx={{ width: "100%", marginTop: "5vh" }}>
           <Grid item xs={12} sm={6}>
-            <Card />
-            <Card />
+            <Card image={Pic1} mainText="Night googles by Mindchatter" subText="Website design, Art direction, Development" />
+            <Card image={Pic2} mainText="Night googles by Mindchatter" subText="Website design, Art direction, Development" />
             <Button
               variant="contained"
               sx={{
@@ -51,8 +57,8 @@ const Portfolio = (props: Props) => {
             </Button>
           </Grid>
           <Grid item xs={12} sm={6} sx={{ marginTop: "5vh" }}>
-            <Card />
-            <Card />
+            <Card image={Pic3} mainText="Night googles by Mindchatter" subText="Website design, Art direction, Development" />
+            <Card image={Pic4} mainText="Night googles by Mindchatter" subText="Website design, Art direction, Development" />
           </Grid>
         </Grid>
       </Container>

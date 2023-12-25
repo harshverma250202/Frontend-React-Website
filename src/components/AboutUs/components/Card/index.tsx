@@ -29,7 +29,7 @@ const Card = (props: Props) => {
             <Box
               sx={{
                 // height: "40vh",
-                width: "calc(100%)",
+                width: "calc(100%-2vw)",
                 // border: "1px solid white",
                 padding: "2vh 2vw",
               }}
@@ -43,7 +43,7 @@ const Card = (props: Props) => {
             <Box
               sx={{
                 // height: "40vh",
-                width: "calc(100%)",
+                width: "calc(100%-2vw)",
                 // border: "1px solid white",
                 padding: "2vh 2vw",
               }}

@@ -11,15 +11,13 @@ const ContactUs = (props: Props) => {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          padding: "0 5%",
           margin: "5vh 0",
-          width: "fit-content",
+          width: "100%",
 
           flexDirection: "column",
           "@media (min-width: 600px)": {
-            padding: "0 10%",
-          width: "100%",
-
+            margin: "5vh 10%",
+            width: "80%",
           },
         }}
         maxWidth={false}
@@ -28,18 +26,27 @@ const ContactUs = (props: Props) => {
           sx={{
             position: "relative",
             height: "20vh",
-            width: "100%",
+            width: "90%",
             borderRadius: "30px",
             background:
               "linear-gradient(90deg, #42D7F8 0%, #4282FE 52.98%, #262DFB 100%)",
-            padding: "5vh",
+            padding: "5vh 5%",
             display: "flex",
             flexDirection: "column",
             flexBasis: "content",
           }}
         >
-          <Typography variant="h5">WORK WITH US</Typography>
-          <Typography variant="h3">We'd Love to get to know you.</Typography>
+          <Typography variant="h6">WORK WITH US</Typography>
+          <Typography
+            variant="h3"
+            sx={{
+              "@media(max-width:600px)": {
+                fontSize: "2rem",
+              },
+            }}
+          >
+            We'd Love to get to know you.
+          </Typography>
 
           <Button
             variant="contained"
@@ -48,7 +55,7 @@ const ContactUs = (props: Props) => {
               background: "white",
               width: "fit-content",
               marginTop: "5vh",
-              boxShadow:"none",
+              boxShadow: "none",
             }}
           >
             <Typography
@@ -57,7 +64,7 @@ const ContactUs = (props: Props) => {
                 // background:
                 //   "linear-gradient(90deg, #42D7F8 0%, #4282FE 65.1%, #3A40FB 100%)",
                 // backgroundClip: "text",
-                color: '#42D7F8',
+                color: "#42D7F8",
               }}
             >
               Get in Touch

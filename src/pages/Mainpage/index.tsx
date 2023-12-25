@@ -24,7 +24,7 @@ function index({}: Props) {
         <Events/>
         <FreeTrial/>
         <Testimonials/>
-        {/* <ContactUs/> */}
+        <ContactUs/>
         <Footer/>
     </>
   )
