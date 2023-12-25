@@ -5,7 +5,7 @@ import { Facebook, LinkedIn, Twitter, YouTube } from '@mui/icons-material';
 const Footer: React.FC = () => {
   return (
     <footer>
-      <Container maxWidth="lg">
+      <Container maxWidth={false}>
         <Grid container spacing={3} sx={{justifyContent: 'space-evenly'}}>
           <Grid item xs={12} sm={4}>
             <Typography variant="h6">Logo</Typography>

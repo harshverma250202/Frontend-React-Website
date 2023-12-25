@@ -19,6 +19,7 @@ const Portfolio = (props: Props) => {
             padding: "0 10%", 
           },
         }}
+        maxWidth={false}
       >
         
         <Box sx={{postion:'relative',left:'0'}} >

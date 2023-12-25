@@ -13,11 +13,13 @@ const ContactUs = (props: Props) => {
           alignItems: "center",
           padding: "0",
           margin: "5vh 0",
+          width: "100%",
           flexDirection: "column",
           "@media (min-width: 600px)": {
             padding: "0 10%",
           },
         }}
+        maxWidth={false}
       >
         <Box
           sx={{
